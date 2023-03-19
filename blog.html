@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>BLOG</title>
+</head>
+
+<body>
+    <div class="menu">
+        <p class="logo_daw">
+            <a href="index.html">MEvento</a> </p>
+        <nav>
+            <div class="icon"><i class="fa fa-bars" style="font-size: 24px;"></i></div>
+            <div class="menu_item">
+                <li>
+                    <a href="index.html">HOME</a> </li>
+            </div>
+
+            <div class="menu_item">
+                <a href="servicios.html">
+                    <li class="develop">
+                        SERVICIOS
+                    </li>
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="blog.html">
+                    <li>BLOG</li>
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="contacto.html">
+                    <li>CONTACTO</li>
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="login.html">
+                    <li>LOGIN</li>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="blog">
+        <div id="noticias">
+            <div class="no_tipo">
+                <h2> BLOG MEvento</h2>
+            </div>
+        </div>
+        <!-- noticia 1 -->
+        <div class="noticia">
+            <img src="img/boda.jfif" alt="" width="320px" height="176px">
+            <h3>Bodas en Getafe</h3>
+            <p>Dentro de poco estaremos organizando una boda en Getafe, emitiremos imagenes del evento para que podais ver como va quedando todo asi que seguidnos en redes sociales para no perderos nada.</p>
+            <div>20/03/2023</div>
+        </div>
+        <!-- noticia 2 -->
+        <div class="noticia">
+            <img src="img/cumpleaños.jpg" width="320px" alt="">
+            <h3>Cumpleaños con Isabel</h3>
+            <p>Ven a celebrar el cumpleaños de Isabel estamos seguro que no te defraudará la organización de este evento os esperamos.</p>
+            <div>15/02/2021</div>
+        </div>
+        <!-- noticia 3 -->
+        <div class="noticia">
+            <img src="img/tarstas.webp" width="320px" height="213px" alt="">
+            <h3>Muchas tartas</h3>
+            <p>En este evento de tartas va a ser dificil no coger unos kilos de mas pero intentaremos no pasarnos, y vosotro vais a venir?.</p>
+            <div>12/02/2023</div>
+        </div>
+        <!-- noticia 4 -->
+        <div class="noticia">
+            <img src="img/fiesta.jpg" width="320px" height="213px" alt="">
+            <h3>Hoy de fiesta</h3>
+            <p>Hoy toca salir de fiesta y el cuerpo lo sabe y tu que, te animas a salir toda la noche sin parar, si es asi nos vemos allí.</p>
+            <div>1/02/2022</div>
+        </div>
+    </div>
+    <script>
+        /* Icono del menu. Vamos a darle funcionalidad para hacer que se oculte
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    o aparezca  según el tamaño de la ventana*/
+        $(function() {
+            //Captura del evento para mostrar u ocultar el menu
+            $(".icon").click(function() {
+                $(".menu_item").toggle();
+            });
+            $(window).resize(function() {
+                var anchura = $(this).width();
+                if (anchura > 576) {
+                    $(".menu_item").show();
+                }
+            });
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="contenido">
+            <h3>MEventos</h3>
+            <p>LEGAL</p>
+            <ul class="privacidad">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            <p>copyright &copy; 2023 codeOpacity. designed by Mevento</p>
+        </div>
+    </footer>
+</body>
+
+</html>
